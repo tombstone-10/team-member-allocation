@@ -88,7 +88,13 @@ const Employees = () => {
     },
   ]);
 
-  return <main></main>;
+  return (
+    <main>
+      {employees.map((employee) => (
+        <p>{employee.fullName}</p>
+      ))}
+    </main>
+  );
 };
 
 export default Employees;
