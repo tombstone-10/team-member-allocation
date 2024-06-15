@@ -1,5 +1,6 @@
 import maleProfile from "../images/male.png";
 import femaleProfile from "../images/female.png";
+import Teams from "./Teams";
 
 const Employees = ({
   employees,
@@ -11,16 +12,10 @@ const Employees = ({
     <main className="container">
       <div className="row justify-content-center mt-3 mb-3">
         <div className="col-6">
-          <select
-            className="form-select form-select-lg"
-            value={selectedTeam}
-            onChange={handleTeamSelectionChange}
-          >
-            <option value="TeamA">TeamA</option>
-            <option value="TeamB">TeamB</option>
-            <option value="TeamC">TeamC</option>
-            <option value="TeamD">TeamD</option>
-          </select>
+          <Teams
+            selectedTeam={selectedTeam}
+            handleTeamSelectionChange={handleTeamSelectionChange}
+          />
         </div>
       </div>
       <div className="row justify-content-center mt-3 mb-3">
