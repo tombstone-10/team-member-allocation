@@ -33,6 +33,16 @@ p {
   font-weight: 300;
 }
 
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+nav a.active {
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  color: black !important;
+}
+
 @media only screen and (max-width: 600px) {
   .card img {
     width: 60%;
