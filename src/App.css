@@ -9,9 +9,19 @@ body {
   align-self: center;
 }
 
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.3s ease;
+}
+
 .card-collection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.standout {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 @media only screen and (max-width: 600px) {
