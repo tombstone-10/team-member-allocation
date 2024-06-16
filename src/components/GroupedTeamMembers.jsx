@@ -66,7 +66,7 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
         return (
           <div
             key={item.team}
-            className="card mt-2"
+            className="card mt-2 grouped-card"
             style={{ cursor: "pointer" }}
           >
             <h4
